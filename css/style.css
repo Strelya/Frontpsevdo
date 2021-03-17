@@ -38,3 +38,25 @@ p::after {
     text-align: center;
     color: orange;
 }
+
+.sq {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+}
+
+.sq::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background: red;
+     display: block;
+}
+
+.sq::after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background: red;
+     display: block;
+}
