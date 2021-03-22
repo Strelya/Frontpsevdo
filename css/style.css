@@ -1,4 +1,4 @@
-.main {
+/* .main {
     padding: 10px;
     background: orange;
 }
@@ -26,37 +26,48 @@ p::first-letter {
 
 p::first-line {
     background: green;
-}
+} */
 
 p::before {
-    content: "Hello";
+    content: "[_";
+    color: #ff00ea;
+    font-weight: 700;
 }
 
 p::after {
-    content: "***";
-    display: block;
+    content: "_]";
+    color: #ff00ea;
+    font-weight: 700;
+    /* display: block;
     text-align: center;
-    color: orange;
+    color: orange; */
 }
 
 .sq {
     width: 100px;
     height: 100px;
     border: 1px solid black;
+    position: relative;
 }
 
 .sq::before {
     content: "";
-    width: 10px;
-    height: 10px;
+    width: 20px;
+    height: 20px;
     background: red;
-     display: block;
+     /* display: block; */
+     position: absolute;
+     top: 0;
+     left: 0;
 }
 
 .sq::after {
     content: "";
-    width: 10px;
-    height: 10px;
+    width: 20px;
+    height: 20px;
     background: red;
-     display: block;
+     /* display: block; */
+     position: absolute;
+     bottom: 0;
+     right: 0;
 }
